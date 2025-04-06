@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Serif", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    min-height: 100vh;
+    padding-top: 100px;
+    scroll-margin-top: 100px;
+}
+
+
+
+#home {
+    background-color: #C4D9FF;
+}
+
+#about-me {
+    background-color: #F7F7F7;
+}
+
+#resume {
+    background-color: #C4D9FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
+/* home */
+.hero-profile {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+body {
+    padding-top: 56px;
+    /* navbar height */
+    background-color: #C4D9FF;
+}
+
+
+
+.container-fluid {
+    flex-direction: row-reverse;
+    margin-right: 2rem;
+}
+
+.active .nav-link {
+    background-color: #0b00d639;
+    color: white;
+}
+
+.navbar {
+    background-color: #211C84;
+}
+
+.nav-item {
+    margin-left: 3rem;
+    font-size: large;
+}
+
+
+
+
+/* About Me */
+#about-me {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    padding: 2rem;
+    margin-top: 1rem;
+    align-items: center;
+    justify-items: center;
+}
+
+#about-me img {
+    width: 100%;
+    max-width: 14rem;
+    height: auto;
+    padding-top: 0;
+    margin-left: 0;
+}
+
+#about-me .about-content {
+    display: block;
+}
+
+@media only screen and (max-width: 992px) {
+    #about-me {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    #about-me img {
+        max-width: 10rem;
+        justify-self: center;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .hero-profile {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+        flex-flow: row wrap;
+    }
+
+    .nav-item {
+        margin-left: 1rem;
+        font-size: medium;
+    }
+
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+
+    body {
+        padding-top: 98px;
+    }
+
+    #about-me img {
+        max-width: 8rem;
+    }
+}
+
+
+.resumeContainer {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 1);
+}
+
+.resumeContainer .leftPage {
+    position: relative;
+    background: #474E93;
+    padding: 40px;
+}
+
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profileText .imageBox {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+.profileText .imageBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h1 {
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.contactInfo {
+    padding-top: 25px;
+}
+
+.title {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.contactInfo ul {
+    position: relative;
+}
+
+
+.contactInfo ul li {
+    list-style: none;
+    margin: 8px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.contactInfo ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.contactInfo ul li .icon {
+    width: 30px;
+    font-size: 18px;
+    color: aquamarine;
+    margin-right: 5px;
+}
+
+.contactInfo ul li span {
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.contactInfo.language ul li {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.contactInfo.language .info {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.contactInfo.language .percent {
+    width: 80%;
+    height: 6px;
+    background-color: #ccc;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.contactInfo.language .percent span {
+    display: block;
+    height: 100%;
+    background-color: #5B8FB9;
+    border-radius: 3px;
+}
+
+.resumeContainer .right_page {
+    position: relative;
+    background: white;
+    padding: 40px;
+}
+
+.about {
+    margin-bottom: 50px;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.title2 {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year_exp {
+    min-width: 200px;
+}
+
+.about .box .year_exp h5 {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #646767;
+}
+
+.about .box .info h4 {
+    text-transform: uppercase;
+}
+
+.contactInfo.language .programming,
+.soft_skill {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.right_page .my_skill {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
